@@ -18,7 +18,9 @@ cognomi.push(cognomeUtenteMinuscolo);
 // ordino i cognomi alfabeticamente
 cognomi.sort();
 console.log(cognomi);
+document.getElementById("lista").innerHTML = cognomi;
 
 // posizione del cognome utente
 var posizione = cognomi.indexOf(cognomeUtenteMinuscolo);
 console.log(posizione);
+document.getElementById("position").innerHTML = posizione + 1;
