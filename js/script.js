@@ -7,9 +7,10 @@
 var cognomi = ["mazzoni", "bianchi", "rossi"];
 
 var cognomeUtente = prompt("inserisci il tuo cognome");
-cognomi.push(cognomeUtente);
+var cognomeUtenteMinuscolo = cognomeUtente.toLowerCase();
+cognomi.push(cognomeUtenteMinuscolo);
 
 cognomi.sort();
 console.log(cognomi);
-var a = cognomi.indexOf(cognomeUtente);
+var a = cognomi.indexOf(cognomeUtenteMinuscolo);
 console.log(a);
